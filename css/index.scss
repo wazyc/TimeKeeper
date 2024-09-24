@@ -1,0 +1,137 @@
+body {
+  //padding-top: 30px;
+  max-width: 600px;
+  font-size: 0.8rem;
+}
+
+h1{
+  text-align: center;
+  input{
+    text-align: center;
+    border: none;
+  }
+}
+
+.navbar {
+  width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  //max-width: 500px;
+  //min-width: 500px;
+  //height: 30px;
+  //background: rgba(240, 240, 240, 1);
+  //padding: 10px 10px;
+  //box-sizing: border-box;
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //display: flex;
+  //align-items: center;
+
+  display: flex;
+  justify-content: space-between;
+
+
+  #start_btn {
+    margin-left: 20px;
+  }
+
+  button {
+    list-style: none;
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    //height: 20px;
+    min-width: 40px;
+    margin-right: 10px;
+  }
+
+  #elapsed_time {
+    width: 80px;
+    text-align: right;
+    margin-left: 10px;
+  }
+
+
+  padding-right: 20px;
+
+  button {
+    margin-right: 10px;
+  }
+
+}
+
+.title {
+  height: 60px;
+}
+
+#work {
+  width: 100%;
+  max-width: 560px;
+  min-width: 560px;
+  text-align: center;
+  height: 1.1rem;
+
+  .highlight-number {
+    font-weight: bold;
+    color: #d00000;
+  }
+
+  .number-col {
+    width: 2rem;
+  }
+
+  .name-col {
+    width: 8rem;
+
+  }
+
+  .time-col {
+    width: 4rem;
+
+    .time-input{
+      width: 90%;
+      text-align: right;
+    }
+  }
+
+  .gauge-col {
+    width: 200px;
+    padding-left: 12px;
+    align-content: center;
+
+    .gauge {
+      .bar-one {
+        background-color: #4a54d7;
+      }
+
+      .bar-two {
+        background-color: #939393;
+      }
+      .bar-two_now{
+        background-color: #a6d5d5;
+      }
+    }
+  }
+
+  .operation-col {
+    width: 20px;
+  }
+
+
+
+
+  .control-col {
+    width: 100px;
+    padding-left: 6px;
+    align-content: center;
+
+    .control-button {
+      font-size: 0.6rem;
+      margin-left: 3px;
+    }
+  }
+
+
+}

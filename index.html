@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>TimeKeeper</title>
+
+    <!-- wijmo   -->
+    <link href="wijmo/wijmo.min.css" rel="stylesheet">
+    <script src="wijmo/wijmo.min.js"></script>
+    <script src="wijmo/wijmo.input.min.js"></script>
+    <script src="wijmo/wijmo.gauge.min.js"></script>
+    <!--    <script>-->
+    <!--        wijmo.setLicenseKey("localhost,628635242567864#B0Kc6Jye0ICbuFkI1pjIEJCLi4TPR3iTpdzQCN5SBdUWiJmYU3ETnR4NZZVePhGdKtieZBFN6NmSlFza7xUMPplbwJTRslFONpnRZtCT7EHVOFFRRxmehdFRzETVuRnZvclQqJ7VNZkYGVGdhhDU5Fkblhmaw4EW9V5b0hVO0F7Sz44KmFEcUJVd4JlYQdTNNJ4TDd4N5Jza8MkShlWNvBlerd7Q8JlY6QjVmRVOqJXVjJmN6gGcrJnW8MzMkhVWlVkdCtiZ5R5aLB5T0ZENrwGUlt6SHdTTVFjT9lkQKVEOtpGdxkzUGhjVHJ6bQR4NGBnNOFWWJVUTtNEelxEMulnevNFWLR7ZGx4Y5dmSRRjMUFVbzE7d6gVYm3mNsp6YnhVbiV5RvMjaD5GeqFDT5ZXQztUaVFUNDRjYNNFUr3ESxhnUaNVciN4RSJWRVNDMPJVc0Zjerg5UFl5SZZEOhR5MvhXTiZjaKNUQiojITJCLiMDOGRUM7cTMiojIIJCL9cDMxUDMwUjN0IicfJye35XX3JSSwIjUiojIDJCLi86bpNnblRHeFBCI4VWZoNFelxmRg2Wbql6ViojIOJyes4nI5kkTRJiOiMkIsIibvl6cuVGd8VEIgIXZ7VWaWRncvBXZSBybtpWaXJiOi8kI1xSfis4N8gkI0IyQiwiIu3Waz9WZ4hXRgAydvJVa4xWdNBybtpWaXJiOi8kI1xSfiQjR6QkI0IyQiwiIu3Waz9WZ4hXRgACUBx4TgAybtpWaXJiOi8kI1xSfiMzQwIkI0IyQiwiIlJ7bDBybtpWaXJiOi8kI1xSfiUFO7EkI0IyQiwiIu3Waz9WZ4hXRgACdyFGaDxWYpNmbh9WaGBybtpWaXJiOi8kI1tlOiQmcQJCLiMzM8ADOwASNwkDM4IDMyIiOiQncDJCLiQ7cvhGbhN6bsJiOiMXbEJCLiQpuknIuk1LpnrJvk/IvlrKomLiOiEmTDJCLiQjN8cjN5IDNyUzM6gjM6IiOiQWSiwSfdtlOicGbmJCLiIjd4IDMyIiOiIXZ6JCLlNHbhZIOMI");-->
+    <!--    </script>-->
+
+    <!-- bootstrap -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+    <link href="css/index.min.css" rel="stylesheet">
+    <script src="js/work.min.js"></script>
+    <script src="js/index.min.js"></script>
+
+
+</head>
+<body>
+
+<nav class="navbar bg-body-tertiary bg-secondary sticky-top">
+    <div class="container">
+        <ul class="navbar-nav me-2">
+            <button id="start_btn"><span id="start_btn_glyph"></span>▶</button>
+        </ul>
+        <ul class="navbar-nav me-2">
+            <button id="stop_btn" disabled><span id="stop_btn_glyph">■</span></button>
+        </ul>
+        <ul class="navbar-nav me-auto">
+            <input id="elapsed_time" type="number" min="0" max="999" placeholder="経過(分)" class="text-center">
+        </ul>
+        <ul class="navbar-nav me-2">
+            <button id="save_btn">save</button>
+        </ul>
+        <ul class="navbar-nav">
+            <button id="load_btn">load</button>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid px-2">
+<!--    <h1 class="title my-0">SSS Time Keeper</h1>-->
+    <h1 class="title my-0"><input id="title_input" value="-"></h1>
+
+
+    <div id="work"></div>
+
+    <div id="debug"></div>
+
+</div>
+
+</body>
+</html>

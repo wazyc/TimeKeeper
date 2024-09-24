@@ -1,0 +1,21 @@
+{
+  "name": "timekeeper",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build-win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0"
+  }
+}

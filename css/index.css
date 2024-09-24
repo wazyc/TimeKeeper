@@ -1,0 +1,97 @@
+body {
+  max-width: 600px;
+  font-size: 0.8rem;
+}
+
+h1 {
+  text-align: center;
+}
+h1 input {
+  text-align: center;
+  border: none;
+}
+
+.navbar {
+  width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.navbar #start_btn {
+  margin-left: 20px;
+}
+.navbar button {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 40px;
+  margin-right: 10px;
+}
+.navbar #elapsed_time {
+  width: 80px;
+  text-align: right;
+  margin-left: 10px;
+}
+.navbar button {
+  margin-right: 10px;
+}
+
+.title {
+  height: 60px;
+}
+
+#work {
+  width: 100%;
+  max-width: 560px;
+  min-width: 560px;
+  text-align: center;
+  height: 1.1rem;
+}
+#work .highlight-number {
+  font-weight: bold;
+  color: #d00000;
+}
+#work .number-col {
+  width: 2rem;
+}
+#work .name-col {
+  width: 8rem;
+}
+#work .time-col {
+  width: 4rem;
+}
+#work .time-col .time-input {
+  width: 90%;
+  text-align: right;
+}
+#work .gauge-col {
+  width: 200px;
+  padding-left: 12px;
+  align-content: center;
+}
+#work .gauge-col .gauge .bar-one {
+  background-color: #4a54d7;
+}
+#work .gauge-col .gauge .bar-two {
+  background-color: #939393;
+}
+#work .gauge-col .gauge .bar-two_now {
+  background-color: #a6d5d5;
+}
+#work .operation-col {
+  width: 20px;
+}
+#work .control-col {
+  width: 100px;
+  padding-left: 6px;
+  align-content: center;
+}
+#work .control-col .control-button {
+  font-size: 0.6rem;
+  margin-left: 3px;
+}
+
+/*# sourceMappingURL=index.css.map */
